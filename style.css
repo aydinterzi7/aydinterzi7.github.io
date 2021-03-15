@@ -1,0 +1,26 @@
+body{
+    background-color:rgb(171, 226, 200);
+    font-family:Helvetica;
+    text-align:center;
+  
+  }
+  ul{
+      text-align: left;
+  }
+  div{
+      display:inline-block;
+      border: 5px solid brown;
+  }
+  
+  #baslik{
+      background-color:greenyellow;
+  }
+  
+  #kisiler{
+      border: 5px solid brown;
+  }
+
+  h1{
+      font-size: 30px;
+      color:blue;
+  }
