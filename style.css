@@ -68,8 +68,8 @@ nav{
 
 /*menu*/
 menu{
-    height: 700px;
-    width: 25%;
+    height: 500px;
+    width: 20%;
 }
 
 #flex-container {
@@ -94,3 +94,4 @@ menu{
     height: 70px;
     padding: 20px 5px;
   }
+
