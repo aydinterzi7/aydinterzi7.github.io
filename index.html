@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head></head>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5EVTR5HY7T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EVTR5HY7T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-5EVTR5HY7T');
-</script>
+    gtag('config', 'G-5EVTR5HY7T');
+    </script>
 </head>
 <body>
     <nav>
@@ -30,19 +31,20 @@
             <div id="nav-tabs">
                 <ul>
                     <li class="nav-tab" ><a href="/" class="nav-links"> Music</a></li>
-                    <li class="nav-tab"><a href="/"" class="nav-links">Podcast</a></li>
-                    <li class="nav-tab"><a href="/" class="nav-links">Movie</a></li>
-                    <li class="nav-tab"><a href="/" class="nav-links">Book</a></li>
+                    <li class="nav-tab"><a href="/"" class="nav-links" onclick="uyarı()">Podcast</a></li>
+                    <li class="nav-tab"><a href="/" class="nav-links" onclick="uyarı()">Movie</a></li>
+                    <li class="nav-tab"><a href="/" class="nav-links" onclick="uyarı()">Book</a></li>
                 </ul>
             </div>
         </div>
+        <div class="hide-show-icon" onclick="myFunction()"><i class="fas fa-eye-slash"></i></div>
     </nav>
     <menu>
         <div id="flex-container">
-            <div class="flex-item"><p>GENRE <div class="plus-icon"><i class="fas fa-plus"></i></div> </p></div>
-            <div class="flex-item"><p>FEELING <div class="plus-icon"><i class="fas fa-plus"></i></div></p></div>
-            <div class="flex-item"><p>ENERGY <div class="plus-icon"><i class="fas fa-plus"></i></div></p></div>
-            <div class="flex-item"><p>DURATION <div class="plus-icon"><i class="fas fa-plus"></i></div></p></div>
+            <div class="flex-item"><p>GENRE <div class="plus-icon"><i onclick="sekme1()" id="genreButton" class="fas fa-plus"></i></div></p></div>
+            <div class="flex-item"><p>FEELING <div class="plus-icon"><i onclick="sekme2()" id="feelButton" class="fas fa-plus"></i></div></p></div>
+            <div class="flex-item"><p>ENERGY <div class="plus-icon"><i onclick="sekme3()" id="energyButton" class="fas fa-plus"></i></div></p></div>
+            <div class="flex-item"><p>DURATION <div class="plus-icon"><i onclick="sekme4()" id="durationButton" class="fas fa-plus"></i></div></p></div>
           </div>
 
     </menu>
