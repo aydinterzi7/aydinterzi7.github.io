@@ -1,4 +1,30 @@
 body {
-    font-family: "Lato",serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(33, 37, 41);
 }
 
+/* sol panel tasarımı */
+.soltaraf{
+    height: 82vh;
+    background-color: rgb(33, 37, 41);
+}
+.dropdown{
+
+    display:flex;
+}
+
+/* açılan listen checkboxlarının sol kenar boşluğu */
+.dropdown-menu{
+    padding-left: 5%;
+}
+
+/* artı ikonunun sağa yaslanması*/
+.plus-icon{
+    position: absolute;
+    right: 10%;
+}
+
+.col-lg-10
+{
+    margin-left: -24px;
+}
