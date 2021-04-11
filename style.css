@@ -1,15 +1,21 @@
-body {
+/* scrollbar oluşumunu önleme */
+html {
+    overflow: hidden;
+}
+
+
+/* google fonts ve arkaplan rengi */
+body{
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(33, 37, 41);
 }
 
 /* sol panel tasarımı */
-.soltaraf{
+.solpanel{
     height: 82vh;
     background-color: rgb(33, 37, 41);
 }
 .dropdown{
-
     display:flex;
 }
 
@@ -18,13 +24,15 @@ body {
     padding-left: 5%;
 }
 
-/* artı ikonunun sağa yaslanması*/
+/* artı ikonunun sağa yaslanması */
 .plus-icon{
     position: absolute;
     right: 10%;
 }
 
-.col-lg-10
-{
-    margin-left: -24px;
+
+
+/* video ile sayfanın sağ kenarı arasındaki boşluk */
+.col-lg-10{
+    padding-right: 2%;
 }
