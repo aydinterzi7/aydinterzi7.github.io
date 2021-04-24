@@ -1,6 +1,6 @@
 /* scrollbar oluşumunu önleme */
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
