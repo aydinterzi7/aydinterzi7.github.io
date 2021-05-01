@@ -19,7 +19,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Montserrat:wght@400;700&amp;display=swap"
     rel="stylesheet">
-
+    
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHZGWW4903"></script>
   <script>
@@ -33,31 +33,18 @@
     gtag('config', 'G-RHZGWW4903');
   </script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHZGWW4903"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-RHZGWW4903');
-  </script>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!--Sayfa boyutunu dengeleyen kod (responsive)-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>songstuff</title>
+  <title>Songstuff</title>
 </head>
-
 <body>
 
   <!--Navbar-->
-  <nav class="navbar bg-dark navbar-expand-sm navbar-dark py-3">
+  <nav class="navbar bg-dark navbar-expand-md navbar-dark py-3">
     <div class="container ">
       <a href="#" class="navbar-brand">
         <i class="fas fa-compact-disc fa-4x"></i>
@@ -85,132 +72,126 @@
     </div>
   </nav>
 
-
-  <!-- Sol panel tasarımı -->
-
-  <div class="row">
-    <div class="col-lg-2">
-      <div class="solpanel">
-
-        <!--Genre sekmesi-->
-        <div class="dropdown">
-          <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme1()"
-            style="width: 100%;text-align: left;border-bottom-color:blanchedalmond; margin-top: 20%;"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            GENRE
-            <span class="plus-icon"><i class="fas fa-plus" id="genreButton"></i></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <input type="checkbox" id="genre1" name="genre1" value="Pop">
-            <label for="genre1">Pop</label><br>
-            <input type="checkbox" id="genre2" name="genre2" value="Rock">
-            <label for="genre2">Rock</label><br>
-            <input type="checkbox" id="genre3" name="genre3" value="Jazz">
-            <label for="genre3">Jazz</label><br>
-            <input type="checkbox" id="genre4" name="genre4" value="Classic">
-            <label for="genre4">Classic</label><br>
-            <input type="checkbox" id="genre5" name="genre5" value="Urban">
-            <label for="genre5">Urban</label><br>
-            <input type="checkbox" id="genre6" name="genre6" value="Hip-Hop">
-            <label for="genre6">Hip-Hop</label><br>
-          </div>
-        </div>
-
-        <!--Feeling sekmesi-->
-        <div class="dropdown">
-          <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme2()"
-            style="width: 100%;text-align: left;border-bottom-color:blanchedalmond; " data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            FEELING
-            <span class="plus-icon"><i class="fas fa-plus" id="feelButton"></i></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <input type="checkbox" id="feeling1" name="feeling1" value="Sad">
-            <label for="feeling1">Sad</label><br>
-            <input type="checkbox" id="feeling2" name="feeling2" value="Mellow">
-            <label for="feeling2">Mellow</label><br>
-            <input type="checkbox" id="feeling3" name="feeling3" value="Romantic">
-            <label for="feeling3">Romantic</label><br>
-            <input type="checkbox" id="feeling4" name="feeling4" value="Happy">
-            <label for="feeling4">Happy</label><br>
-          </div>
-        </div>
-
-        <!--Energy sekmesi-->
-        <div class="dropdown">
-          <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme3()"
-            style="width: 100%;text-align: left;border-bottom-color:blanchedalmond;" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            ENERGY
-            <span class="plus-icon"><i class="fas fa-plus" id="energyButton"></i></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <input type="checkbox" id="energy1" name="energy1" value="Low">
-            <label for="energy1">Low</label><br>
-            <input type="checkbox" id="energy2" name="energy2" value="Mid">
-            <label for="energy2">Mid</label><br>
-            <input type="checkbox" id="energy3" name="energy3" value="Up">
-            <label for="energy3">Up</label><br>
-            <input type="checkbox" id="energy4" name="energy4" value="Boost">
-            <label for="energy4">Boost</label><br>
-          </div>
-        </div>
-
-        <!--Duration sekmesi-->
-        <div class="dropdown">
-          <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme4()"
-            style="width: 100%;text-align: left;border-bottom-color:blanchedalmond;" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            DURATION
-            <span class="plus-icon"><i class="fas fa-plus" id="durationButton"></i></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <input type="checkbox" id="duration1" name="duration1" value="0 - 2 min.">
-            <label for="duration1">0 - 2 min.</label><br>
-            <input type="checkbox" id="duration2" name="duration2" value="2 - 4 min.">
-            <label for="duration2">2 - 4 min.</label><br>
-            <input type="checkbox" id="duration3" name="duration3" value="4 + min.">
-            <label for="duration3">4 + min.</label><br>
-          </div>
-        </div>
-
-        <!--(Non) Vocals sekmesi-->
-        <div class="dropdown">
-          <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme5()"
-            style="width: 100%;text-align: left;border-bottom-color:blanchedalmond;" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            (NON) VOCALS
-            <span class="plus-icon"><i class="fas fa-plus" id="vocalButton"></i></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <input type="checkbox" id="vocal1" name="vocal1" value="Instrumental">
-            <label for="vocal1">Instrumental</label><br>
-            <input type="checkbox" id="vocal2" name="vocal2" value="Male">
-            <label for="vocal2">Male</label><br>
-            <input type="checkbox" id="vocal3" name="vocal3" value="Female">
-            <label for="vocal3">Female</label><br>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-
-    <div class="col-lg-10">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mtf7hC17IBM" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+<div class="row">
+  <div class="col-2 col-s-3 menu">
+ <!--Genre sekmesi-->
+ <div class="dropdown">
+    <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme1()"
+      style="width: 100%;text-align: left;border-bottom-color:whitesmoke;"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      GENRE
+      <span class="chevron-icon"><i class="fas fa-chevron-down"></i></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <input type="checkbox" id="genre1" name="genre1" value="Pop">
+      <label for="genre1">Pop</label><br>
+      <input type="checkbox" id="genre2" name="genre2" value="Rock">
+      <label for="genre2">Rock</label><br>
+      <input type="checkbox" id="genre3" name="genre3" value="Jazz">
+      <label for="genre3">Jazz</label><br>
+      <input type="checkbox" id="genre4" name="genre4" value="Classic">
+      <label for="genre4">Classic</label><br>
+      <input type="checkbox" id="genre5" name="genre5" value="Urban">
+      <label for="genre5">Urban</label><br>
+      <input type="checkbox" id="genre6" name="genre6" value="Hip-Hop">
+      <label for="genre6">Hip-Hop</label><br>
     </div>
   </div>
-  
+
+  <!--Feeling sekmesi-->
+  <div class="dropdown">
+    <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme2()"
+      style="width: 100%;text-align: left;border-bottom-color:whitesmoke; " data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      FEELING
+      <span class="chevron-icon"><i class="fas fa-chevron-down"></i></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <input type="checkbox" id="feeling1" name="feeling1" value="Sad">
+      <label for="feeling1">Sad</label><br>
+      <input type="checkbox" id="feeling2" name="feeling2" value="Mellow">
+      <label for="feeling2">Mellow</label><br>
+      <input type="checkbox" id="feeling3" name="feeling3" value="Romantic">
+      <label for="feeling3">Romantic</label><br>
+      <input type="checkbox" id="feeling4" name="feeling4" value="Happy">
+      <label for="feeling4">Happy</label><br>
+    </div>
+  </div>
+
+  <!--Energy sekmesi-->
+  <div class="dropdown">
+    <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme3()"
+      style="width: 100%;text-align: left;border-bottom-color:whitesmoke;" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      ENERGY
+      <span class="chevron-icon"><i class="fas fa-chevron-down"></i></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <input type="checkbox" id="energy1" name="energy1" value="Low">
+      <label for="energy1">Low</label><br>
+      <input type="checkbox" id="energy2" name="energy2" value="Mid">
+      <label for="energy2">Mid</label><br>
+      <input type="checkbox" id="energy3" name="energy3" value="Up">
+      <label for="energy3">Up</label><br>
+      <input type="checkbox" id="energy4" name="energy4" value="Boost">
+      <label for="energy4">Boost</label><br>
+    </div>
+  </div>
+
+  <!--Duration sekmesi-->
+  <div class="dropdown">
+    <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme4()"
+      style="width: 100%;text-align: left;border-bottom-color:whitesmoke;" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      DURATION
+      <span class="chevron-icon"><i class="fas fa-chevron-down"></i></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <input type="checkbox" id="duration1" name="duration1" value="0 - 2 min.">
+      <label for="duration1">0 - 2 min.</label><br>
+      <input type="checkbox" id="duration2" name="duration2" value="2 - 4 min.">
+      <label for="duration2">2 - 4 min.</label><br>
+      <input type="checkbox" id="duration3" name="duration3" value="4 + min.">
+      <label for="duration3">4 + min.</label><br>
+    </div>
+  </div>
+
+  <!--(Non) Vocals sekmesi-->
+  <div class="dropdown">
+    <button class="btn btn-dark" type="button" id="dropdownMenuButton" onclick="sekme5()"
+      style="width: 100%;text-align: left;border-bottom-color:whitesmoke;" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      (NON) VOCALS
+      <span class="chevron-icon"><i class="fas fa-chevron-down"></i></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <input type="checkbox" id="vocal1" name="vocal1" value="Instrumental">
+      <label for="vocal1">Instrumental</label><br>
+      <input type="checkbox" id="vocal2" name="vocal2" value="Male">
+      <label for="vocal2">Male</label><br>
+      <input type="checkbox" id="vocal3" name="vocal3" value="Female">
+      <label for="vocal3">Female</label><br>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-10 col-s-9">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/mtf7hC17IBM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></div>
+  </div>
+
+
   <div class="footer  border-top mt-1">
     <div class="row text-white mt-1">
       <div class="col-6 ps-5">
         <h3>ABOUT</h3>
-        <p>Kullanıcının yapacağı tercihlere uygun bir şekilde şarkı açan site. Bu aşamayı istediğimiz şekilde bitirebildiğimiz takdirde siteyi podcast, kitap, film önerisi de yapabilecek hale getirmek istiyoruz.</p>
+        <p style="text-align: justify; margin-right: 3%;">Kullanıcının yapacağı tercihlere uygun bir şekilde şarkı açan site. Bu aşamayı istediğimiz şekilde bitirebildiğimiz takdirde siteyi podcast, kitap, film önerisi de yapabilecek hale getirmek istiyoruz.</p>
       </div>
       <div class="col-6 ps-4">
-        <h3>CONTACT US</h3>
-        <div class="row ">
+        <h3 class="contact">CONTACT US</h3>
+        <div class="row_foot">
           <div class="col-4">
             <h5>Aydın Terzi</h5>
             <a class="btn btn-outline-light btn-floating m-1" href="mailto:aydinterzi7@gmail.com" role="button"
@@ -235,13 +216,10 @@
             ><i class="fab fa-github"></i>
           </a>
           </div>
-        </div>
-       
-      </div>
-
+        </div>       
     </div>
+</div>
 
-  </div>
 
 
   <!-- js etkileşim için kullanılan kodlar -->
@@ -255,7 +233,5 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-
 </body>
-
 </html>

@@ -1,19 +1,10 @@
-/* scrollbar oluşumunu önleme */
-html {
-    overflow-x: hidden;
-}
-
-
 /* google fonts ve arkaplan rengi */
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(33, 37, 41);
 }
-
-/* sol panel tasarımı */
-.solpanel{
-    height: 82vh;
-    background-color: rgb(33, 37, 41);
+html {
+    overflow-x: hidden;
 }
 .dropdown{
     display:flex;
@@ -25,14 +16,58 @@ body{
 }
 
 /* artı ikonunun sağa yaslanması */
-.plus-icon{
+.chevron-icon{
     position: absolute;
-    right: 10%;
+    left: 90%;
 }
 
-
-
-/* video ile sayfanın sağ kenarı arasındaki boşluk */
-.col-lg-10{
-    padding-right: 2%;
+.video-container {
+    position: relative;
+    padding-bottom: 52.25%; /* 56.25 ti 16:9 */
+    height: 0;
 }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .contact{display: block; margin-left: 5%;}  /*sayfa boyutu küçülünce footer kısmının hizalaması*/ 
+    .row_foot{margin-left: 3%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 20%;}  /*sol panel genişliği*/
+    .col-3 {width: 25%;}
+    .col-4 {width: 30%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 75%;}    /*burası video oranını ayarlıyor*/
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+
+  
+ .footer{
+    background-color: rgb(33, 37, 41);
+ }
