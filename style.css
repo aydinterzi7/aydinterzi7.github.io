@@ -21,6 +21,10 @@ html {
     left: 90%;
 }
 
+.accordion-button {
+  background-color: #212529;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 52.25%; /* 56.25 ti 16:9 */
